@@ -135,4 +135,4 @@ async def on_voice_state_update(member, before, after):
             await voice_client.disconnect()
 
 # Run the bot
-bot.run('MTIyMzE3ODQwMDg5MDM1NTc3Mw.GAjc2y.S__whU5GKMtmdSNt0kLQwlYWlvmvW5_SMYdYvk')
+bot.run('KEY')
