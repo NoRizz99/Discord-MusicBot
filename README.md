@@ -42,9 +42,11 @@ A simple Discord music bot built with Python that plays audio from YouTube.
 
 -Ensure FFmpeg is in your system PATH
 
-4. Run the bot:
-python bot.py
+4. **Run the bot:**
+   ```bash
+   python bot.py
 
+ 
 Requirements
 -Python 3.7+
 
