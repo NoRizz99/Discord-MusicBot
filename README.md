@@ -1,50 +1,64 @@
-Discord Music Bot
+# Discord Music Bot
+
 A simple Discord music bot built with Python that plays audio from YouTube.
 
-Features
-🎵 Play music from YouTube URLs
+## Features
 
-📋 Queue system for multiple songs
+- 🎵 Play music from YouTube URLs
+- 📋 Queue system for multiple songs
+- ⏸️ Pause, resume, and skip functionality
+- 🔄 Auto-leave when voice channel is empty
+- 🔊 Volume control
 
-⏸️ Pause, resume, and skip functionality
+## Commands
 
-🔄 Auto-leave when voice channel is empty
+| Command | Description |
+|---------|-------------|
+| `!join` | Join your voice channel |
+| `!leave` | Leave the voice channel |
+| `!play <url>` | Play a song from YouTube |
+| `!pause` | Pause current song |
+| `!resume` | Resume paused song |
+| `!skip` | Skip current song |
+| `!stop` | Stop playing and clear queue |
 
-🔊 Volume control
+## Setup
 
-Commands
-!join - Join your voice channel
+1. **Install required packages:**
+   ```bash
+   pip install discord.py yt-dlp
 
-!leave - Leave the voice channel
+2.  Install FFmpeg:
 
-!play <url> - Play a song from YouTube
+-Windows: Download from FFmpeg website
 
-!pause - Pause current song
+-Linux: sudo apt install ffmpeg
 
-!resume - Resume paused song
+-macOS: brew install ffmpeg
 
-!skip - Skip current song
+3. Configure the bot:
 
-!stop - Stop playing and clear queue
+-Replace 'KEY_HERE' with your Discord bot token
 
-Setup
-Install required packages:
+-Ensure FFmpeg is in your system PATH
 
-bash
-pip install discord.py yt-dlp
-Replace 'KEY_HERE' with your Discord bot token
-
-Run the bot:
-
-bash
+4. Run the bot:
 python bot.py
+
 Requirements
-Python 3.7+
+-Python 3.7+
 
-FFmpeg installed on your system
+-FFmpeg
 
-Discord bot token
+-discord.py
 
-Required Python packages (see above)
+-yt-dlp
 
-Note: Make sure FFmpeg is installed and accessible in your system PATH for audio playback to work properly.
+Note
+Make sure your bot has the necessary permissions:
+
+-Send Messages
+
+-Connect to Voice Channels
+
+-Speak in Voice Channels
